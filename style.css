@@ -548,6 +548,34 @@ section .title::after {
     background: #00abf0 !important;
 }
 
+/* social media section styling */
+
+.social-media {
+    background: #f1f1f1;
+    padding: 100px 0;
+}
+
+.social-media .title {
+    color: #00abf0;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    width: 50%;
+}
+
+/* Custom CSS for LinkedIn iframe */
+iframe[src*="sociablekit.com/linkedin-profile-posts/iframe"] {
+    /* Replace the height value below (e.g., 500px) with your desired height */
+    height: 750px;
+}
+
+
 /* contact section styling */
 .contact .title::after {
     content: "get in touch";
