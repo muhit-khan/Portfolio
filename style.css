@@ -462,7 +462,7 @@ section .title::after {
     width: 70%;
 }
 
-/* teams section styling */
+/* project section styling */
 
 .projects {
     color: #fff;
@@ -859,5 +859,62 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    /* ... (other styles) ... */
+
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-link {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the height for the LinkedIn iframe on mobile */
+    iframe[src*="sociablekit.com/linkedin-profile-posts/iframe"] {
+        height: 500px; /* Adjust this height as needed */
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    /* ... (other styles) ... */
+
+    .services .serv-content .card {
+        width: 100%;
     }
 }
