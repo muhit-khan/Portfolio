@@ -139,7 +139,8 @@ section .title::after {
 
 .navbar .menu li {
     list-style: none;
-    display: inline-block;
+    /*display: inline-block; */
+    display: none;
 }
 
 .navbar .menu li a {
@@ -725,6 +726,11 @@ footer span a:hover {
 }
 
 @media (max-width: 947px) {
+
+    .desktop-menu {
+        display: none;
+    }
+
     .menu-btn {
         display: block;
         z-index: 999;
@@ -917,4 +923,62 @@ footer span a:hover {
     .services .serv-content .card {
         width: 100%;
     }
+}
+
+
+
+/* Style for the more dropdown */
+
+.navbar .desktop-menu .more-dropdown .more-menu {
+    display: none;
+    position: absolute;
+    background-color: #11111112;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 160px;
+    /* Adjust width if needed */
+    padding: 0;
+    list-style-type: none;
+    /* Remove bullet points */
+}
+
+.navbar .desktop-menu .more-dropdown:hover .more-menu {
+    display: block;
+}
+
+.navbar .desktop-menu .more-dropdown .more-menu li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar .desktop-menu .more-dropdown .more-menu li:last-child {
+    border-bottom: none;
+}
+
+/* Adjustments for the angle-down icon */
+.more-dropdown .fa-angle-down {
+    margin-left: 5px;
+}
+
+
+.navbar .desktop-menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .desktop-menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .desktop-menu li a:hover {
+    color: #00abf0;
+}
+
+.navbar.sticky .desktop-menu li a:hover {
+    color: #fff;
 }
