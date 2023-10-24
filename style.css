@@ -942,6 +942,12 @@ footer span a:hover {
     /* Remove bullet points */
 }
 
+.navbar .desktop-menu .more-dropdown .more-menu.scrolled-up {
+    background-color: #111111a9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.45);
+}
+
+
 .navbar .desktop-menu .more-dropdown:hover .more-menu {
     display: block;
 }
