@@ -117,22 +117,22 @@ section .title::after {
     font-size: 50px;
     color: yellowgreen;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 750;
 }
 
 .navbar .logo a:hover {
-    animation: glowEffect 1s infinite;
+    animation: glowEffect 2s infinite;
 }
 
 @keyframes glowEffect {
     0% {
-        text-shadow: 0 0 5px yellowgreen, 0 0 10px yellowgreen;
+        text-shadow: 0 0 5px crimson, 0 0 10px #00abf0;
     }
     50% {
-        text-shadow: 0 0 20px yellowgreen, 0 0 30px yellowgreen;
+        text-shadow: 0 0 20px crimson, 0 0 30px #00abf0;
     }
     100% {
-        text-shadow: 0 0 5px yellowgreen, 0 0 10px yellowgreen;
+        text-shadow: 0 0 5px crimson, 0 0 10px #00abf0;
     }
 }
 
@@ -261,7 +261,7 @@ section .title::after {
 
 /* about section styling */
 .about .title::after {
-    background: #111;
+    background: #fbfbfb;
     content: "who i am";
     color: yellowgreen;
 }
@@ -315,17 +315,23 @@ section .title::after {
 
 /* services section styling */
 .services {
+    display: flex;
     background: url("images/service_bg.jpg") no-repeat center;
-    background-size: cover;
     color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+
 
 .services .title {
     color: #00abf0;
 }
 
 .services .title::after {
-    background: #111111;
+    border-radius: 10px;
+    background: #ffffff;
     content: "what i provide";
     color: yellowgreen;
 }
@@ -930,10 +936,11 @@ footer span a:hover {
 /* Style for the more dropdown */
 
 .navbar .desktop-menu .more-dropdown .more-menu {
+    border-radius: 5px;
     display: none;
     position: absolute;
-    background-color: #11111112;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #11111134;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.45);
     z-index: 1;
     width: 160px;
     /* Adjust width if needed */
