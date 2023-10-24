@@ -957,7 +957,13 @@ footer span a:hover {
 
 /* Adjustments for the angle-down icon */
 .more-dropdown .fa-angle-down {
-    margin-left: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.more-dropdown .fa-angle-left {
+    padding: 10px;
+    display: inline-block;
 }
 
 
