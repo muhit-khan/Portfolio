@@ -7,6 +7,13 @@ $(document).ready(function () {
             $('.navbar').removeClass("sticky");
         }
 
+            // more-menu on scroll script
+            if (this.scrollY > 800) {
+                $('.more-menu').addClass("scrolled-up");
+            } else {
+                $('.more-menu').removeClass("scrolled-up");
+            }
+
         // scroll-up button show/hide script
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
